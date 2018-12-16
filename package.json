@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,5 +17,9 @@
     "url": "https://github.com/VishnuBaliga/react-egg-head/issues"
   },
   "homepage": "https://github.com/VishnuBaliga/react-egg-head#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
 }
