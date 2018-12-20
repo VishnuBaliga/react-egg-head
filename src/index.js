@@ -1,3 +1,7 @@
-import greeting from './greet'
+// import greeting from './greet'
+import App from './App'
 
-console.log(greeting);
+
+
+
+ReactDOM.render(<App/>, document.getElementById('app'));
