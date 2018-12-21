@@ -14,8 +14,16 @@ module.exports = {
                 loader: 'babel-loader',
                 exclude: /node_modules/,
                 options: {
-                    presets:['@babel/preset-env','@babel/preset-react'],
-                    plugins:['react-hot-loader/babel','@babel/plugin-proposal-class-properties']
+                    presets:[['@babel/preset-env',{
+                        targets: [
+                            'last 2 version',
+                            'not dead',
+                            'not < 2%',
+                            'not ie 11'
+                        ],
+                        useBuiltIns: 'entry'
+                    }],'@babel/preset-react'],
+                    plugins:['react-hot-loader/babel','@babel/plugin-proposal-class-properties','@babel/plugin-syntax-dynamic-import']
 
                 } 
             },
